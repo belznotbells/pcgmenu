@@ -9,7 +9,7 @@
     mini_fridge: "galaxy ipa"
 
   tasks:
-    - name: apply page template
-      template:
-        src: templates/index.html.j2
-        dest: menu.html
+  - name: apply page template
+    template:
+      src: templates/index.html.j2
+      dest: menu.html
