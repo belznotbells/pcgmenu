@@ -9,6 +9,6 @@
     mini_fridge: "galaxy ipa"
 
 - name: apply page template
-    ansible.builtin.template:
-      src: templates/index.html.j2
-      dest: menu.html
+  ansible.builtin.template:
+    src: templates/index.html.j2
+    dest: menu.html
