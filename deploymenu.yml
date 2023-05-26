@@ -1,0 +1,14 @@
+---
+- name: template for tap menu
+  hosts: localhost
+  become: true
+  vars:
+    tap1: "kolsch"
+    tap2: "nose golbin"
+    tap3: "creek park"
+    mini_fridge: "galaxy ipa"
+
+- name: apply page template
+    ansible.builtin.template:
+      src: templates/index.html.j2
+      dest: menu.html
