@@ -8,7 +8,8 @@
     tap3: "creek park"
     mini_fridge: "galaxy ipa"
 
-- name: apply page template
-  template:
-    src: templates/index.html.j2
-    dest: menu.html
+  tasks:
+    - name: apply page template
+      template:
+        src: templates/index.html.j2
+        dest: menu.html
