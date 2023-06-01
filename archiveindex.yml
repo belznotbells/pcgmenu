@@ -1,0 +1,5 @@
+---
+- name: Container present
+  containers.podman.podman_container:
+    name: pcgnginx
+    state: present
