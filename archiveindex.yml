@@ -1,6 +1,9 @@
 ---
 - name: Container present
   hosts: localhost
-  containers.podman.podman_container:
-    name: pcgnginx
-    state: present
+
+  tasks:
+  - name: check it pcgnginx is running
+    containers.podman.podman_container:
+      name: pcgnginx
+      state: present
