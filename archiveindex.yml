@@ -1,5 +1,6 @@
 ---
 - name: Container present
+  hosts: localhost
   containers.podman.podman_container:
     name: pcgnginx
     state: present
